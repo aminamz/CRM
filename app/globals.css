@@ -16,14 +16,19 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  .a_textbox {
+    @apply w-full rounded p-1 mt-2 border-solid border border-secondary focus:outline-none;
+  }
+  .a_button {
+    @apply mt-2 p-2 w-full bg-primary rounded text-slate-100 hover:bg-secondary hover:text-primary;
+  }
 }
 
 @layer utilities {
