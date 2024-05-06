@@ -16,8 +16,8 @@ export default function CustomerPage() {
     loadCustomer();
   }, []);
 
-  const tableHeader = ["ردیف", "نام", "نام خانوادگی", "شماره", "عملیات"];
-  const tableData = ["firstName", "lastName", "phone"];
+  const tableHeader = ["ردیف", "نام", "نام خانوادگی", "شماره" , "امتیاز", "عملیات"];
+  const tableData = ["firstName", "lastName", "phone" , "currentPoint"];
   return (
     <div className="flex flex-col justify-between md:flex-row md:w-full md:max-w-xl md:mx-auo gap-3 p-4">
       <button className="a_button w-[100px] mb-4">

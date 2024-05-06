@@ -10,3 +10,7 @@ export async function ConnectDatabase() {
   }
   return isSucces;
 }
+
+export async function GetRequiredPoint() {
+  return 50_000;
+}

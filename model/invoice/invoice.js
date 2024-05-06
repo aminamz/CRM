@@ -1,7 +1,11 @@
 import { Schema, model, models } from "mongoose";
 
 const invoiceSchema = new Schema({
-  customerId: {
+  iid: {
+    type: String,
+    required: true,
+  },
+  cid: {
     type: String,
     required: true,
   },
@@ -11,7 +15,7 @@ const invoiceSchema = new Schema({
         type: String,
         required: true,
       },
-      Count: {
+      count: {
         type: Number,
         required: true,
       },

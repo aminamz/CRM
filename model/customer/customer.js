@@ -37,6 +37,13 @@ const customerSchema = new Schema({
     default: () => Date.now(),
     immutable: false,
   },
+  lastPointUsed: {
+    type: Date,
+  },
+  currentPoint: {
+    type: Number,
+    default: 0,
+  },
 });
 
 export const Customer = models.Customer || model("Customer", customerSchema);
