@@ -11,6 +11,10 @@ const invoiceSchema = new Schema({
   },
   product: [
     {
+      rowid: {
+        type: String,
+        required: true,
+      },
       productId: {
         type: String,
         required: true,
